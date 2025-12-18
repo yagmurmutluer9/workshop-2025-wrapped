@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-workshop-examples",
+  "version": "1.0.0",
+  "description": "Node.js workshop examples",
+  "main": "01-hello-world.js",
+  "scripts": {
+    "hello": "node 01-hello-world.js",
+    "files": "node 02-file-system.js",
+    "basic-server": "node 03-basic-server.js",
+    "express": "node 04-express-server.js",
+    "todo-api": "node 05-todo-api.js"
+  },
+  "keywords": ["nodejs", "workshop", "express"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
+
