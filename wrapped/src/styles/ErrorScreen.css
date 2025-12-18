@@ -1,0 +1,50 @@
+/* ============================================
+   ERROR SCREEN STYLES
+   ============================================ */
+
+.error-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-cream);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 20px;
+}
+
+.error-sticker {
+  font-size: 5rem;
+}
+
+.error-screen h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 2.5rem;
+}
+
+.error-hint {
+  font-family: 'Caveat', cursive;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.retry-btn {
+  padding: 12px 24px;
+  background: var(--accent-pink);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Gabarito', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  transition: transform 0.2s;
+}
+
+.retry-btn:hover {
+  transform: rotate(2deg) scale(1.05);
+}
+

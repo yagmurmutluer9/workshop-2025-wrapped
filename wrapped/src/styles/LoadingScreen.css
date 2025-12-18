@@ -1,0 +1,29 @@
+/* ============================================
+   LOADING SCREEN STYLES
+   ============================================ */
+
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-cream);
+  color: var(--text-dark);
+}
+
+.loading-text {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+}
+
+.loading-emoji {
+  font-size: 3rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
