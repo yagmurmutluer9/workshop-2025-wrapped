@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics - Workshop Example</title>
+    
+    <!-- CSS goes inside the <style> tag -->
+    <style>
+        /* ========== COLORS & BACKGROUNDS ========== */
+        
+        /* Style the body (entire page) */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* ========== TEXT STYLING ========== */
+        
+        h1 {
+            color: #ff6b00;          
+            font-size: 32px;          /* Font size */
+            text-align: center;       /* Center the text */
+        }
+
+        p {
+            color: #333333;           /* Dark gray text */
+            font-size: 16px;
+            line-height: 1.5;         /* Space between lines */
+        }
+
+        /* ========== THE BOX MODEL ========== */
+        
+        .box-example {
+            background-color: white;
+            width: 300px;             /* Width of the box */
+            height: 150px;            /* Height of the box */
+            padding: 20px;            /* Space INSIDE the box */
+            margin: 20px;             /* Space OUTSIDE the box */
+            border: 2px solid #ff6b00; /* Border around the box */
+            border-radius: 10px;      /* Rounded corners */
+        }
+
+        /* ========== BUTTONS ========== */
+        
+        .my-button {
+            background-color: #ff6b00;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;          /* Hand cursor on hover */
+        }
+
+        /* Hover effect - when mouse is over the button */
+        .my-button:hover {
+            background-color: #e55d00;
+        }
+
+        /* ========== CLASSES vs IDs ========== */
+        
+        /* CLASS selector (.) - can be used multiple times */
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        /* ID selector (#) - should be unique, used only once */
+        #special-text {
+            color: purple;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* ========== FLEXBOX BASICS ========== */
+        
+        .flex-container {
+            display: flex;            /* Enable flexbox */
+            gap: 10px;                /* Space between items */
+            justify-content: center;  /* Center items horizontally */
+        }
+
+        .flex-item {
+            background-color: #ff6b00;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎨 CSS Basics Workshop</h1>
+
+    <p>This page demonstrates basic CSS styling concepts.</p>
+
+    <!-- Box Model Example -->
+    <h2>The Box Model</h2>
+    <div class="box-example">
+        <p>This box has padding, margin, border, and border-radius!</p>
+    </div>
+
+    <!-- Button Example -->
+    <h2>Styled Button</h2>
+    <button class="my-button">Hover Over Me!</button>
+
+    <!-- Class & ID Examples -->
+    <h2>Classes and IDs</h2>
+    <p class="highlight">This paragraph uses a CLASS (.highlight)</p>
+    <p class="highlight">This paragraph also uses the same CLASS</p>
+    <p id="special-text">This paragraph uses an ID (#special-text)</p>
+
+    <!-- Flexbox Example -->
+    <h2>Flexbox Layout</h2>
+    <div class="flex-container">
+        <div class="flex-item">Box 1</div>
+        <div class="flex-item">Box 2</div>
+        <div class="flex-item">Box 3</div>
+    </div>
+
+</body>
+</html>
+
